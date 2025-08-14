@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Pandey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-svg" viewBox="0 0 100 40">
+                    <path class="draw-line" d="M10,30 Q30,10 50,30 T90,30" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                </svg>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <svg class="title-svg" viewBox="0 0 300 60">
+                            <text class="draw-text" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Divyansh Pandey</text>
+                        </svg>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text">CSE Undegraduate</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description fade-in-up">
+                    Final-year Computer Science and Engineering student with a strong foundation in web development and
+mobile app design. 
+                    </p>
+                    <div class="hero-buttons fade-in-up">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in-right">
+                    <!-- CUSTOMIZATION: Replace this placeholder with your personal image -->
+                    <img src="src/images/profilepic.png" alt="Divyansh Pandey" class="profile-hero">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg class="section-title-svg" viewBox="0 0 200 40">
+                        <text class="draw-text-section" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">About Me</text>
+                    </svg>
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <!-- CUSTOMIZATION: Replace this placeholder with your profile image -->
+                    <img src="https://images.pexels.com/photos/3782235/pexels-photo-3782235.jpeg" alt="About John Doe">
+                    <div class="about-image-border"></div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>Divyansh here</h3>
+                    <p>
+                        <!-- CUSTOMIZATION: Replace with your own bio -->
+                       I’m a passionate creator of digital experiences with expertise spanning web development, UI/UX design, and cybersecurity — honed through years of hands-on projects and continuous learning. Currently pursuing my B.Tech in Computer Science & Engineering at Panjab University, I bring a unique blend of creativity, technical skill, and problem-solving mindset to every project.
+
+I turn ambitious ideas into reality, transforming complex challenges into sleek, intuitive interfaces backed by efficient, secure code. My journey began with a curiosity to explore how the digital world works, and today, my toolkit spans dozens of modern technologies across both front-end and back-end development. Every project I take on is an opportunity to push boundaries, master new skills, and create solutions that make an impact.
+                    </p>
+                    <p>
+                        My journey in web development started with a curiosity about how things work on the internet. 
+                        Today, I specialize in modern web technologies and enjoy working on projects that challenge 
+                        me to grow and learn new things every day.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Total Skills</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Total Internships</span>
+                        </div>
+                    </div>
+                    <!-- CUSTOMIZATION: Update the resume link with your actual resume URL -->
+                    <a href="#" class="btn btn-primary resume-btn" id="resumeBtn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg class="section-title-svg" viewBox="0 0 200 40">
+                        <text class="draw-text-section" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Skills</text>
+                    </svg>
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid animate-on-scroll">
+                    <!-- CUSTOMIZATION: Update these skills with your own -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Icon" style="width:48px; height:48px;">
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+     alt="React Icon" 
+     style="width:48px; height:48px;">
+
+                        </div>
+                        <h3>ReactJs</h3>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" 
+     alt="Next.js Icon" 
+     style="width:48px; height:48px;">
+
+                        </div>
+                        <h3>NextJs</h3>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+     alt="MySQL Icon" 
+     style="width:48px; height:48px;">
+
+                        </div>
+                        <h3>MySQL</h3>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" 
+     alt="Android Studio Icon" 
+     style="width:48px; height:48px;">
+
+                        </div>
+                        <h3>Android Studio</h3>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="70"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" 
+     alt="Kotlin Icon" 
+     style="width:48px; height:48px;">
+
+                        </div>
+                        <h3>Jetpack Compose & Kotlin</h3>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="65"></div>
+                        </div>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg class="section-title-svg" viewBox="0 0 200 40">
+                        <text class="draw-text-section" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Projects</text>
+                    </svg>
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid animate-on-scroll">
+                <!-- CUSTOMIZATION: Update these project cards with your own projects -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="src/images/hotel.png" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://hotel-booking-app-lac.vercel.app/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Divyansh2-droid/hotelsystemfinal" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hotel Booking System</h3>
+                        <p>A complete fullstack hotel booking platform where users can search, view, and book hotels with real-time availability and secure payments. Built using Next.js for the frontend, Supabase for authentication, database, and storage, and Stripe for payment integration. Integrated Google Places API to fetch hotels near the user’s location.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Supabase</span>
+                             <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">Tailwind CSS</span>
+                              <span class="tech-tag">Google Places Api</span>
+                              <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://hotel-booking-app-lac.vercel.app/" class="btn btn-outline">Live Demo</a>
+                            <a href="https://github.com/Divyansh2-droid/hotelsystemfinal" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://items.epicpxls.com/uploads/photo/bebdc2e19bd5cdc9ef86b8fd49e74418" alt="BookHive-library Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1aqBCBTZ4rz55KkxZ2B82tK1Z_tnOhdK7/view" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Divyansh2-droid/BookHive" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BookHive-Library Android Application</h3>
+                        <p>BookHive is a mobile application developed in Kotlin. Its primary function is to offer users categorized access to a diverse range of books. The categories include Magazines, Religious Texts, Literature, Fiction, History, and Engineering.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Jetpack Compose</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Android Studio</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://drive.google.com/file/d/1aqBCBTZ4rz55KkxZ2B82tK1Z_tnOhdK7/view" class="btn btn-outline">Live Demo</a>
+                            <a href="https://github.com/Divyansh2-droid/BookHive" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="src/images/portfolio.png" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Professional Portfolio</h3>
+                        <p>A responsive professional portfolio to showcase my skills, projects and to connect to recruiters and buisnesses.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">ReactJs</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                             <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">EmailJS API</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="src/images/landing.png" alt="Social Media Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://landing-page-front-end-alpha.vercel.app/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Divyansh2-droid/LandingPageFrontEnd" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Landing Page Frontend</h3>
+                        <p>SAAS website landing page frontend project to showcase my skills in frontend web development.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                             <span class="tech-tag">Shadcn UI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://landing-page-front-end-alpha.vercel.app/" class="btn btn-outline">Live Demo</a>
+                            <a href="https://github.com/Divyansh2-droid/LandingPageFrontEnd" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg class="section-title-svg" viewBox="0 0 200 40">
+                        <text class="draw-text-section" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Contact Me</text>
+                    </svg>
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Let's work together</h3>
+                    <p>I'm always excited to take on new challenges and collaborate on interesting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <!-- CUSTOMIZATION: Replace with your email -->
+                                <p>pandeydivyansh.up53@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <!-- CUSTOMIZATION: Replace with your phone number -->
+                                <p>+91 8545907998</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <!-- CUSTOMIZATION: Replace with your location -->
+                                <p>Chandigarh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form animate-on-scroll">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-loader"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <!-- CUSTOMIZATION: Replace with your name -->
+                    <p>&copy; 2025 Divyansh Pandey. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <!-- CUSTOMIZATION: Replace with your actual social media links -->
+                    <a href="https://github.com/Divyansh2-droid/" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/divyansh2902" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/divyansh.pandeyy__/" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
